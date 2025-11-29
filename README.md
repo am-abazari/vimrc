@@ -117,12 +117,18 @@ inoremap <c-b> <Esc>:NERDTreeToggle<cr>
 nnoremap <c-b> <Esc>:NERDTreeToggle<cr>noremap <c-b> <Esc>:NERDTreeToggle<cr>
 
 
+
+set t_Co=256
+set background=dark
+colorscheme dracula
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+
 if exists('$TMUX')
 	let &t_7f = "<t_7f>"
 	let &t_7b = "<t_7b>"
 endif
 
-colorscheme dracula
 ```
 
 
